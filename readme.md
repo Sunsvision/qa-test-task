@@ -25,7 +25,7 @@ The test application is an app for finding repositories on github and saving the
 ## How to launch test application
 
 1. Install NodeJS (any latest version)
-2. Open folder with project in terminal
+2. Download current repository, extract it and open the folder containing this file in terminal
 3. Type command `npx http-server .`
    
    This will launch local server that hosts current opened folder.
