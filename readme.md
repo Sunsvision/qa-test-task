@@ -4,7 +4,7 @@ Do manual testing of provided application, find bugs and provide suggestions for
 
 ## Expected result
 
-Issues list in any bug tracker system (publicly available), for example issues list in created GitHub repository. It's not required to push any files to repository, just create issues for empty new repository. Do not do this for current repository please.
+Issues list in any bug tracker system (publicly available), for example issues list in created GitHub repository (it's not required to push any files to repository, just create issues for the empty new repository and do not do this for current repository please!).
 
 ## Requirements
 
