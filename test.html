@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            color: #444;
+            font-size: medium;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        ul {
+            margin: 0 auto;
+            list-style: none;
+            max-width: 600px;
+        }
+        p {
+            font-size: large;
+        }
+        input {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            width: 130px;
+            height: 40px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+            7px 7px 20px 0px rgba(0,0,0,.1),
+            4px 4px 5px 0px rgba(0,0,0,.1);
+            outline: none;
+            background: rgb(6,14,131);
+            background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+            border: none;
+        }
+        button:hover {
+            background: rgb(0,3,255);
+            background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+        }
+        label.correct {
+            background-color: forestgreen;
+            color: white;
+        }
+        label.wrong {
+            background-color: #d33d5b;
+            color: white;
+        }
+        #result {
+            position: fixed;
+            font-size: 36px;
+            color: blue;
+            left: 50px;
+            top: 50%;
+            margin-top: -18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <h2>Question 1</h2>
+            <p>Which of the following will most probably influence the duration, but not the effort of the testing activities?</p>
+            <input type="radio" name="1" value="a" id="1a" />
+            <label for="1a">Time to repair defects found during testing</label><br>
+            <input type="radio" name="1" value="b" id="1b" />
+            <label for="1b">Maturity of the test process </label><br>
+            <input type="radio" name="1" value="c" id="1c" />
+            <label for="1c">Required level of detail of test conditions</label><br>
+            <input type="radio" name="1" value="d" id="1d" />
+            <label for="1d">Required quality of the system</label><br>
+        </li>
+        <li>
+            <h2>Question 2</h2>
+            <p>Which of the following statements about testing metrics usage is TRUE?</p>
+            <input type="radio" name="2" value="a" id="2a" />
+            <label for="2a">Confirmation and regression test status is used to monitor the progress of testing</label><br>
+            <input type="radio" name="2" value="b" id="2b" />
+            <label for="2b">Trends in the lag time from defect reporting to resolution is used to reward the developers</label><br>
+            <input type="radio" name="2" value="c" id="2c" />
+            <label for="2c">Number of test conditions identified is used to monitor the quality of testing</label><br>
+            <input type="radio" name="2" value="d" id="2d" />
+            <label for="2d">Planned versus actual hours to develop testware is used to minimize regression testing</label><br>
+        </li>
+        <li>
+            <h2>Question 3</h2>
+            <p>Which of the following alternatives is best to monitor test progress?</p>
+            <input type="radio" name="3" value="a" id="3a" />
+            <label for="3a">Estimation of code coverage by measuring the number of executed tests </label><br>
+            <input type="radio" name="3" value="b" id="3b" />
+            <label for="3b">Combined usage of coverage, confidence, risk, test, and defect metrics </label><br>
+            <input type="radio" name="3" value="c" id="3c" />
+            <label for="3c">Combined usage of coverage, product, people, test, and defect metrics </label><br>
+            <input type="radio" name="3" value="d" id="3d" />
+            <label for="3d">Combined usage of product, people, and project metrics </label><br>
+        </li>
+        <li>
+            <h2>Question 4</h2>
+            <p>Which of the following represents a legal sequence of states for a defect report that leads to a terminal state? Assume that “in progress” means one or more states where developers or other project stakeholders are addressing the defect.</p>
+            <input type="radio" name="4" value="a" id="4a" />
+            <label for="4a">Initial, in progress, confirmation test, closed, deferred </label><br>
+            <input type="radio" name="4" value="b" id="4b" />
+            <label for="4b">Initial, in progress, returned, in progress, confirmation test</label><br>
+            <input type="radio" name="4" value="c" id="4c" />
+            <label for="4c">Initial, in progress, returned, cancelled </label><br>
+            <input type="radio" name="4" value="d" id="4d" />
+            <label for="4d">In progress, initial, confirmation test, closed</label><br>
+        </li>
+        <li>
+            <h2>Question 5</h2>
+            <p>It has been decided that the first step to test and development process improvement within your organization will be to reduce the number of defects introduced during development. Which of the following defect report statistics will be MOST useful in fulfilling this aim? </p>
+            <input type="radio" name="5" value="a" id="5a" />
+            <label for="5a">The lifecycle phases of introduction, detection, and removal for the defect </label><br>
+            <input type="radio" name="5" value="b" id="5b" />
+            <label for="5b">The defect root cause information </label><br>
+            <input type="radio" name="5" value="c" id="5c" />
+            <label for="5c">The defect component information </label><br>
+            <input type="radio" name="5" value="d" id="5d" />
+            <label for="5d">The defect removal efficiency information</label><br>
+        </li>
+    </ul>
+    <button onclick="checkForm()">Submit</button>
+    <div id="result"></div>
+    <script>
+        function checkForm() {
+            const res = document.getElementById('result');
+            const cor = 'WyJhIiwiYSIsImIiLCJjIiwiYiJd';
+            const a = JSON.parse(atob(cor));
+
+            let number = 0;
+            for (let i = 1; i < 6; i++) {
+                let selected;
+                document.getElementsByName(i).forEach(el => el.checked && (selected = el));
+                const label = document.querySelector(`label[for="${selected.id}"]`);
+                if (a[i - 1] === selected.value) {
+                    number++;
+                    if (label) {
+                        label.className = 'correct';
+                    }
+                }
+                else if (label) {
+                    label.className = 'wrong';
+                }
+            }
+            res.textContent = number + ' of 5!';
+        }
+
+    </script>
+</body>
+</html>
